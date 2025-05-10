@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(9, 36, 79, 0.85), rgba(9, 36, 79, 0.85)),
+    url("./../images/wrinkle.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #09244f;
+  /* animation: fadeIn 1s ease-in; */
+}
+
+/* @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} */
+
+header {
+  background-color: #fbf5ac;
+  margin: 60px auto 30px;
+  padding: 25px 50px;
+  border-radius: 20px;
+  max-width: 1000px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 48px;
+  color: #09244f;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-text img {
+  width: 180px;
+  height: auto;
+  margin-left: 10px;
+  position: relative;
+  top: 9px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #09244f;
+  background-color: #bfbe7a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  background-color: #6a9e8c;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main-container {
+  background-color: #94a492;
+  color: #7c7c5c;
+  margin: 30px auto;
+  padding: 40px 30px;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Main animation */
+.main-container:hover {
+  transform: translateY(-5px);
+}
+
+/* #introduction {
+    background-color: #c4c2b8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+} */
+
+#introduction h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #09244f;
+}
+
+#introduction p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#features h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #7c7459;
+  margin-bottom: 20px;
+}
+
+#features ul {
+  list-style: none;
+  padding: 0;
+}
+
+#features ul li {
+  background-color: #eff5de;
+  margin: 15px auto;
+  padding: 15px 20px;
+  font-size: 18px;
+  width: 50%;
+  border-left: 6px solid #bcac85;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#features ul li:hover {
+  background-color: #fbf5ac;
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #09244f;
+  color: #eff5de;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 15px;
+}
