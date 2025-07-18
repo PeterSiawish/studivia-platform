@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(9, 36, 79, 0.85), rgba(9, 36, 79, 0.85)),
+    url("./../images/wrinkle.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #09244f;
+}
+
+header {
+  background-color: #fbf5ac;
+  margin: 60px auto 30px;
+  padding: 25px 50px;
+  border-radius: 20px;
+  max-width: 1000px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 48px;
+  color: #09244f;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-text img {
+  width: 180px;
+  height: auto;
+  margin-left: 10px;
+  position: relative;
+  top: 9px;
+}
+
+.signup-container {
+  background-color: #94a492;
+  color: #09244f;
+  margin: 30px auto;
+  padding: 40px 30px;
+  max-width: 500px; /* Consistent with login page width */
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.signup-container:hover {
+  transform: translateY(-5px);
+}
+
+.signup-form-section h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #09244f;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #7c7459;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #bfbe7a;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #eff5de;
+  color: #09244f;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group input[type="password"]::placeholder {
+  color: #7c7459;
+  opacity: 0.7;
+}
+
+.signup-button {
+  background-color: #6a9e8c;
+  color: #ffffff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 50%;
+  margin: 20px auto 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.signup-button:hover {
+  background-color: #09244f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #7c7459;
+}
+
+.login-link a {
+  color: #09244f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #6a9e8c;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #09244f;
+  color: #eff5de;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 15px;
+}
