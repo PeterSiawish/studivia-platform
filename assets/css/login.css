@@ -44,41 +44,16 @@ h1 {
   top: 9px;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 15px;
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #09244f;
-  background-color: #bfbe7a;
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a:active {
-  background-color: #6a9e8c;
-  color: #ffffff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
 .login-container {
   background-color: #94a492;
-  color: #09244f; /* Changed text color to match main headings */
+  color: #09244f;
   margin: 30px auto;
   padding: 40px 30px;
-  max-width: 500px; /* Adjusted for a login form */
+  max-width: 500px;
   border-radius: 15px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  text-align: center; /* Center the content inside */
+  text-align: center;
 }
 
 .login-container:hover {
@@ -95,39 +70,39 @@ nav ul li a:active {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 20px; /* Add some padding to the form */
+  padding: 0 20px;
 }
 
 .form-group {
-  text-align: left; /* Align labels and inputs to the left */
+  text-align: left;
 }
 
 .form-group label {
   display: block;
   font-size: 18px;
   margin-bottom: 8px;
-  color: #7c7459; /* Matching feature list item text color */
+  color: #7c7459;
 }
 
 .form-group input[type="text"],
 .form-group input[type="password"] {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid #bfbe7a; /* Matching nav link border */
+  border: 1px solid #bfbe7a;
   border-radius: 8px;
   font-size: 16px;
-  background-color: #eff5de; /* Matching feature list item background */
+  background-color: #eff5de;
   color: #09244f;
 }
 
 .form-group input[type="text"]::placeholder,
 .form-group input[type="password"]::placeholder {
-  color: #7c7459; /* Lighter placeholder text */
+  color: #7c7459;
   opacity: 0.7;
 }
 
 .login-button {
-  background-color: #6a9e8c; /* Matching nav hover background */
+  background-color: #6a9e8c;
   color: #ffffff;
   padding: 15px 25px;
   border: none;
@@ -135,31 +110,31 @@ nav ul li a:active {
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  width: 50%; /* Make button narrower */
-  margin: 20px auto 0; /* Center the button */
+  width: 50%;
+  margin: 20px auto 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .login-button:hover {
-  background-color: #09244f; /* Darker blue on hover for button */
+  background-color: #09244f;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .signup-link {
   margin-top: 20px;
   font-size: 16px;
-  color: #7c7459; /* Matching feature list item text color */
+  color: #7c7459;
 }
 
 .signup-link a {
-  color: #09244f; /* Darker blue for link */
+  color: #09244f;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .signup-link a:hover {
-  color: #6a9e8c; /* Lighter green on hover */
+  color: #6a9e8c;
   text-decoration: underline;
 }
 
