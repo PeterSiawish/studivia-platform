@@ -44,12 +44,38 @@ h1 {
   top: 9px;
 }
 
+/* Navigation bar styling (copied from index.css) */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #09244f;
+  background-color: #bfbe7a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  background-color: #6a9e8c;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 .contact-container {
   background-color: #94a492;
   color: #09244f;
   margin: 30px auto;
   padding: 40px 30px;
-  max-width: 600px; /* Slightly wider than login/signup for more content */
+  max-width: 700px; /* Slightly wider to accommodate contact info */
   border-radius: 15px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -69,8 +95,11 @@ h1 {
 .contact-intro {
   font-size: 18px;
   margin-bottom: 30px;
-  color: #6b6551; /* Matching feature list item text color */
+  color: #7c7459;
   line-height: 1.5;
+  max-width: 80%; /* Constrain width for better readability */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-form {
@@ -88,7 +117,7 @@ h1 {
   display: block;
   font-size: 18px;
   margin-bottom: 8px;
-  color: #595341;
+  color: #7c7459;
 }
 
 .form-group input[type="text"],
@@ -101,7 +130,16 @@ h1 {
   font-size: 16px;
   background-color: #eff5de;
   color: #09244f;
-  resize: vertical; /* Allow vertical resizing for textarea */
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #6a9e8c; /* Highlight border on focus */
+  box-shadow: 0 0 0 3px rgba(106, 158, 140, 0.4); /* Subtle glow on focus */
 }
 
 .form-group input[type="text"]::placeholder,
@@ -128,6 +166,42 @@ h1 {
 .send-button:hover {
   background-color: #09244f;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* New: Contact Information Section */
+.contact-info {
+  margin-top: 40px; /* Space from the form */
+  padding-top: 30px;
+  border-top: 1px solid rgba(9, 36, 79, 0.2); /* Subtle separator */
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #09244f;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #7c7459;
+}
+
+.contact-info ul li strong {
+  color: #09244f; /* Make key labels stand out */
+}
+
+.contact-info ul li a {
+  color: #09244f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+  color: #6a9e8c;
+  text-decoration: underline;
 }
 
 footer {
