@@ -45,7 +45,7 @@ To run Studivia locally:
 
 Have feedback or need help?  
 📧 Email: [support@studivia.com](mailto:support@studivia.com)  
-📝 Or use the [Contact Page](./pages/contact.html)
+📝 Or use the [Contact Page](https://petersiawish.github.io/studivia-platform/pages/contact.html)
 
 ---
 
