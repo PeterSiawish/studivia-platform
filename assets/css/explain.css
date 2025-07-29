@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(9, 36, 79, 0.85), rgba(9, 36, 79, 0.85)),
+    url('./../images/wrinkle.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #09244f;
+    padding: 2rem;
+}
+
+.main-container {
+    display: flex;
+    gap: 2rem;
+    background-color: #fbf5ac;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-top: 1rem;
+    margin: 2rem auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-viewer {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-viewer h2 {
+    margin-bottom: 1rem;
+    color: #09244f;
+}
+
+.pdf-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.page-controls {
+    display: flex;
+    justify-content: space-between;
+     margin-top: 1rem;
+    align-items: center;
+    margin-top: 23rem;
+}
+
+.page-controls button {
+    padding: 0.5rem 1rem;
+    background-color: #09244f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-controls span {
+    font-weight: bold;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.summary-box {
+    background-color: #bfbe7a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 4.4rem;
+}
+
+.summary-box h2 {
+    margin-bottom: 1rem;
+}
+
+.video-box {
+    background-color: #94a492;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-box h2 {
+    margin-bottom: 1rem;
+}
+
+.video-box ul {
+    list-style-type: none;
+}
+
+.video-box li {
+    margin-bottom: 0.75rem;
+}
+
+.video-box a {
+    text-decoration: none;
+    color: #09244f;
+    font-weight: bold;
+}
+
+.video-box a:hover {
+    color: #4a6796;
+    text-decoration: underline;
+}
