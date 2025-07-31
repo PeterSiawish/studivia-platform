@@ -3,96 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./../assets/css/upload.css" />
-    <title>Upload</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/upload.css" />
+    <title>Upload Content</title>
   </head>
   <body>
     <header>
-      <h1>Please Select Your Grade</h1>
-      <!-- <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../quiz.html">Quiz</a></li>
-                <li><a href="upload.html">Upload</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-        </nav> -->
+      <h1>Upload Your Book to Get Started!</h1>
     </header>
 
-    <main>
-      <section class="grade-container">
-        <details class="grade-box">
-          <summary class="grade">Grade 4</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
+    <main class="upload-container">
+      <section class="upload-form-section">
+        <h2>Expand Your Knowledge</h2>
+        <p class="upload-intro">
+          Help us help you with your learning resources! You can upload your
+          educational books as PDFs or other relevant document formats here. Our
+          app can then help you study by explaining and summarizing text
+          sections.
+        </p>
+        <form
+          action="/upload-success"
+          method="POST"
+          enctype="multipart/form-data"
+          class="upload-form"
+        >
+          <div class="form-group">
+            <label for="title">Book Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="e.g., Biology Basics, World History Vol. 1"
+              required
+            />
           </div>
-        </details>
 
-        <details class="grade-box">
-          <summary class="grade">Grade 5</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
+          <div class="form-group">
+            <label for="author">Author (Optional)</label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="e.g., Jane Doe"
+            />
           </div>
-        </details>
 
-        <details class="grade-box">
-          <summary class="grade">Grade 6</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">Select a Category</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="science">Science</option>
+              <option value="history">History</option>
+              <option value="literature">Literature</option>
+              <option value="programming">Programming</option>
+              <option value="art">Art & Design</option>
+              <option value="business">Business & Economics</option>
+              <option value="other">Other</option>
+            </select>
           </div>
-        </details>
 
-        <details class="grade-box">
-          <summary class="grade">Grade 7</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
+          <div class="form-group">
+            <label for="file-upload">Upload Book File</label>
+            <input
+              type="file"
+              id="file-upload"
+              name="book_file"
+              accept=".pdf,.doc,.docx,.epub,.txt"
+              required
+            />
+            <p class="file-help-text">
+              Accepted formats: PDF, DOC, DOCX, EPUB, TXT. Max file size: 50MB
+            </p>
           </div>
-        </details>
 
-        <details class="grade-box">
-          <summary class="grade">Grade 8</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
-          </div>
-        </details>
-
-        <details class="grade-box">
-          <summary class="grade">Grade 9</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
-          </div>
-        </details>
-
-        <details class="grade-box">
-          <summary class="grade">Grade 10</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
-          </div>
-        </details>
-
-        <details class="grade-box">
-          <summary class="grade">Grade 11</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
-          </div>
-        </details>
-
-        <details class="grade-box">
-          <summary class="grade">Grade 12</summary>
-          <div class="subjects">
-            <button class="subject">Mathematics</button>
-            <button class="subject">Science</button>
-          </div>
-        </details>
+          <button type="submit" class="upload-button">Upload Book</button>
+        </form>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 Studivia Team. All rights reserved.</p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(9, 36, 79, 0.85), rgba(9, 36, 79, 0.85)),
+    url("../assets/images/wrinkle.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #09244f;
+}
+
+h1 {
+  margin: 5rem 15rem 4rem 15rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #09244f;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background: #fbf5ac;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .grade-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+} */
+
+.grade-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  align-items: start;
+}
+
+.grade-box {
+  align-self: start;
+  background-color: #eef2c8;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.grade {
+  background-color: #6a9e8c;
+  color: #fff;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding-left: 2rem;
+  transition: background-color;
+}
+
+.grade:hover {
+  background-color: #fbf5ac;
+  color: #09244f;
+}
+
+details[open].grade-box {
+  background-color: #fbf5ac;
+}
+
+.grade:hover {
+  background-color: #fbf5ac;
+  color: #09244f;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  list-style: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: #fbf5ac;
+}
+
+.subject {
+  background-color: #bcac85;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subject:hover {
+  background-color: #fbf5ac;
+  color: #09244f;
+}
