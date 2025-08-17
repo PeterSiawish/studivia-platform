@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const signinForm = document.querySelector('.signup-form');
+document.addEventListener("DOMContentLoaded", function () {
+  const signinForm = document.querySelector(".signup-form");
 
   if (!signinForm) return;
 
@@ -16,9 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // get form values
     const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();  
+    const password = document.getElementById("password").value.trim();
     const email = document.getElementById("email").value.trim();
-    const confirmPassword = document.getElementById("confirm-password").value.trim();
+    const confirmPassword = document
+      .getElementById("confirm-password")
+      .value.trim();
 
     // validate form values
     let errorMessages = [];
@@ -47,5 +49,5 @@ document.addEventListener('DOMContentLoaded', function() {
       feedback.textContent = "Signup successful!";
       feedback.style.color = "green";
     }
-    });
   });
+});
